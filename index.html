@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>simple form with html and css</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Landing Page</h1>
-    <p>i learn coding for a leaving</p>
+    <div class="form-container">
+     <h2>contact us</h2>
+     <form>
+        <div class="input-group">
+       <label for="name">Name</label>
+       <input type="text" id="name" name="name " placeholder="Enter your name" required>
+        </div>
+
+         <div class="input-group">
+       <label for="email">Email</label>
+       <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+         <div class="input-group">
+       <label for="phone">Phone number</label>
+       <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
+        </div>
+
+        <div class="input-group">
+            <label for="message">message</label>
+        <textarea name="message" placeholder="enter your message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">submit</button>
+     </form>
+    </div>
 </body>
 </html>
